@@ -6,8 +6,9 @@
 ### Author: Becca Lee and Jacob Anderson
 
 ### Links and Resources
+![Build Status](https://www.travis-ci.com/beccalee123/16-authentication.svg?branch=master)
 * [repo](https://github.com/beccalee123/16-authentication)
-* [travis](http://xyz.com)
+* [travis](https://www.travis-ci.com/beccalee123/16-authentication)
 * [back-end](http://xyz.com) (when applicable)
 * [front-end](http://xyz.com) (when applicable)
 
