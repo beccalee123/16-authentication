@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = (req,res,next) => {
+module.exports = (req,res,next) => { // FLAG
   let error = { error: 'Resource Not Found' };
   res.statusCode = 404;
   res.statusMessage = 'Not Found';

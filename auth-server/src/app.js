@@ -24,9 +24,9 @@ app.use(express.urlencoded({extended:true}));
 app.use(notFound);
 app.use(errorHandler);
 
-let isRunning = false;
+let isRunning = false; //FLAG
 
-module.exports = {
+module.exports = { //FLAG
   server: app,
   start: (port) => {
     if( ! isRunning ) {
