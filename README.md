@@ -1,13 +1,14 @@
 ![CF](http://i.imgur.com/7v5ASc8.png) LAB
 =================================================
 
-## Project Name
+## Authentication
 
-### Author: Student/Group Name
+### Author: Becca Lee and Jacob Anderson
 
 ### Links and Resources
-* [repo](http://xyz.com)
-* [travis](http://xyz.com)
+![Build Status](https://www.travis-ci.com/beccalee123/16-authentication.svg?branch=master)
+* [repo](https://github.com/beccalee123/16-authentication)
+* [travis](https://www.travis-ci.com/beccalee123/16-authentication)
 * [back-end](http://xyz.com) (when applicable)
 * [front-end](http://xyz.com) (when applicable)
 
