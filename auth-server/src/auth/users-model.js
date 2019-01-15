@@ -29,16 +29,16 @@ users.statics.authenticateBasic = function(auth) {
 
 // Compare a plain text password against the hashed one we have saved
 users.methods.comparePassword = function(password) {
-  return bcrypt.compare(password, this.password
-    .then(valid => valid? this : null));
+  return bcrypt.compare(password, this.password)
+    .then(valid => valid ? this : null);
 };
 
 // Generate a JWT from the user id and a secret
 users.methods.generateToken = function() {
   let tokenData = {
     id:this._id,
-    role: this.role,
-    capabilities: (this.acl && this.acl.capabilities) || [], //FLAG
+    role: this.role, // MAYBE REMOVE?
+    capabilities: (this.acl && this.acl.capabilities) || [], //MAYBE REMOVE?
   };
   return jwt.sign(tokenData, process.env.SECRET || 'changeit' );
 };
