@@ -7,6 +7,12 @@ const auth = require('../middleware.js');
 router.get('/books', auth, handleGetAll);
 router.get('/books/:id', auth, handleGetOne);
 
+// authRouter.post('/signin', auth, (req, res, next) => {
+//   console.log('hello');
+//   res.cookie('auth', req.token);
+//   res.send(req.token);
+// });
+
 // Route Handlers
 function handleGetAll(req, res, next) {
   let books = {
@@ -17,14 +23,20 @@ function handleGetAll(req, res, next) {
       { title: 'Eloquent Javascript' },
     ],
   };
-  res.status(200).json(books);
+
+  res.cookie('auth', req.token);
+  //res.send(req.token);          //added send line with token
+  res.send(req.token).status(200).json(books); //original send line
 }
 
 function handleGetOne(req, res, next) {
   let book = {
     title:'Moby Dick',
   };
-  res.status(200).json(book);
+
+  res.cookie('auth', req.token);
+  //res.send(req.token);
+  res.send(req.token).status(200).json(book);
 }
 
 module.exports = router;
