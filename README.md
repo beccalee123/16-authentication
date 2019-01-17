@@ -9,6 +9,7 @@
 ![Build Status](https://www.travis-ci.com/beccalee123/16-authentication.svg?branch=master)
 * [repo](https://github.com/beccalee123/16-authentication)
 * [travis](https://www.travis-ci.com/beccalee123/16-authentication)
+* [heroku](https://bl-ja-authentication.herokuapp.com/)
 
 ### Modules
 - `src/auth/middleware.js` contains middleware functions for authentication
